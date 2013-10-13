@@ -172,6 +172,9 @@ a {
 .none {
   display: none;
 }
+.mt50 {
+  margin-top: 40px;
+}
 *,
 *:before,
 *:after {
@@ -292,10 +295,66 @@ header .header-item.logo img {
 .hb {
   border-right: 1px dotted #000;
 }
+.fb {
+  border-right: 1px dotted #fff;
+}
+.main .wrap {
+  width: 95%;
+  margin: 0 auto;
+}
+.lineBox li {
+  border-top: 5px solid #000;
+  padding-top: 4px;
+  margin-bottom: 8px;
+}
+.lineBox li .boxWrapper {
+  border-top: 1px solid #000;
+  padding-top: 4px;
+}
+footer {
+  background: #2d2d2d;
+  overflow: hidden;
+  color: #fff;
+  padding: 10px 0;
+}
+.footer-nav {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.footer-item {
+  width: 33.333333333333%;
+  float: left;
+}
+.footer-item a {
+  display: block;
+  width: 100%;
+  color: #fff;
+}
 .main {
-  padding-top: 38px;
+  padding-top: 35px;
+  margin-bottom: 10px;
+}
+.brand-des {
+  margin-bottom: 10px;
 }
 .brand-des img {
   width: 100%;
   height: auto;
+}
+.homepage.boxWrapper img {
+  height: 120px;
+  width: auto;
+}
+.homepage.boxWrapper {
+  overflow: hidden;
+}
+.homepage.boxWrapper a {
+  display: block;
+  overflow: hidden;
+  color: #000;
+}
+.homepage.boxWrapper a div {
+  width: 90px;
 }
