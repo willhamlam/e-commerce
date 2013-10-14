@@ -172,6 +172,9 @@ a {
 .none {
   display: none;
 }
+.mt20 {
+  margin-top: 20px;
+}
 .mt50 {
   margin-top: 40px;
 }
@@ -367,6 +370,32 @@ footer {
   border-top: 1px solid #000;
   padding-top: 5px;
 }
+button,
+input {
+  -webkit-appearance: none;
+  outline: none;
+}
+input {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 0px;
+  padding: 10px;
+  font-size: 16px;
+  color: #acacac;
+}
+button {
+  display: block;
+  background: #00c3bc;
+  border: 0px;
+  font-size: 16px;
+  padding: 4px;
+  margin: 0 auto;
+  color: #fff;
+}
+.innerButton {
+  border: 1px solid #fff;
+  padding: 10px;
+}
 .main {
   padding-top: 35px;
   margin-bottom: 10px;
@@ -396,4 +425,7 @@ footer {
 }
 .homepage.boxWrapper a div {
   width: 90px;
+}
+.products .innerButton {
+  width: 200px;
 }
