@@ -175,6 +175,12 @@ a {
 .mt50 {
   margin-top: 40px;
 }
+.mb20 {
+  margin-bottom: 20px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
 *,
 *:before,
 *:after {
@@ -267,6 +273,7 @@ a {
 }
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   background: #fff;
 }
@@ -297,6 +304,9 @@ header .header-item.logo img {
 }
 .fb {
   border-right: 1px dotted #fff;
+}
+.bb1 {
+  border-bottom: 1px solid #acacac;
 }
 .main .wrap {
   width: 95%;
@@ -332,12 +342,41 @@ footer {
   width: 100%;
   color: #fff;
 }
+.productWrapper {
+  width: 130px;
+  height: 250px;
+  margin: 0 auto;
+  border-top: 5px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.productWrapper a {
+  display: block;
+  color: #000;
+}
+.productWrapper img {
+  width: 100%;
+}
+.productWrapper p {
+  color: #acacac;
+  padding-bottom: 10px;
+}
+.productItem {
+  border-top: 1px solid #000;
+  padding-top: 5px;
+}
 .main {
   padding-top: 35px;
   margin-bottom: 10px;
 }
 .brand-des {
   margin-bottom: 10px;
+}
+.brand-des p {
+  width: 90%;
+  margin: 0 auto;
 }
 .brand-des img {
   width: 100%;
