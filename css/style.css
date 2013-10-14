@@ -194,6 +194,9 @@ a {
 .mb20 {
   margin-bottom: 20px;
 }
+.pt20 {
+  padding-top: 20px;
+}
 .pb10 {
   padding-bottom: 10px;
 }
@@ -428,6 +431,12 @@ ul.det li {
   margin-bottom: 10px;
   font-size: 12px;
 }
+button.delete {
+  float: left;
+  font-size: 12px;
+  background: #c2c2c2;
+  width: 20px;
+}
 .main {
   padding-top: 35px;
   margin-bottom: 10px;
@@ -496,4 +505,51 @@ ul.det li {
 }
 .checkoutBtns .addToCart {
   background: #2d2d2d;
+}
+.cart .boxWrapper {
+  overflow: hidden;
+}
+.cart .boxWrapper img {
+  float: left;
+  width: 130px;
+  height: auto;
+}
+.cart .boxWrapper .cartDes {
+  margin-left: 140px;
+  margin-top: 25px;
+  font-size: 12px;
+}
+.cart .boxWrapper .cartDes p {
+  color: #8c8c8c;
+}
+.cart .boxWrapper .cartDes p span {
+  color: #000;
+}
+.cart .cartFtn {
+  margin: 10px 0px 30px;
+  overflow: hidden;
+  padding: 5px 10px;
+  width: 100%;
+  border: 1px solid #000;
+}
+.cart .cartFtn .cartSinglePri {
+  float: right;
+}
+.cartTotalPri {
+  border-top: 4px solid #000;
+  padding-top: 4px;
+}
+.cartTotalPri .subtotal {
+  border-top: 1px solid #000;
+  text-align: center;
+  padding: 30px 0;
+}
+.cartTotalPri .subtotal p {
+  color: #8c8c8c;
+}
+.cartTotalPri .subtotal p span {
+  color: #000;
+}
+.cartTotalPri button {
+  width: 50%;
 }
