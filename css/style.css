@@ -446,6 +446,14 @@ select {
   border: 1px solid #000;
   color: #8c8c8c;
 }
+.det .selected {
+  color: #fff;
+  border: 0px solid #00c3bc;
+  background: #00c3bc;
+}
+.hidden {
+  display: none;
+}
 .main {
   padding-top: 35px;
   margin-bottom: 10px;

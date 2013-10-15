@@ -5,7 +5,7 @@
 	<title>HILL</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/idangerous.swiper.css">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<meta name="viewport" content="initial-scale=1.0;">
 </head>
 <body>
 	<header>
@@ -84,13 +84,13 @@
 					<span class="title mb10">Quantity</span>
 					<div class="row  mt10">
 						<div class="col-4 b1">
-							<span class="numDes">-</span>
+							<div class="numDes">-</div>
 						</div>
 						<div class="col-4 b1 b2">
-							<input type="text">
+							<input type="text" value="1">
 						</div>
 						<div class="col-4 b1">
-							<span class="numInc">+</span>
+							<div class="numInc">+</div>
 						</div>
 					</div>	
 				</div>
@@ -127,9 +127,52 @@
 	<script src="js/idangerous.swiper-2.0.min.js"></script>
 	<script>
 		$(function(){
+
 		  var mySwiper = $('.swiper-container').swiper({
 		    mode:'horizontal',
 		  });
+
+		 var color = $('.det.color li'),
+		 		 size = $('.det.size li');
+
+		 color.click(function(){
+		 		color.removeClass('selected');
+		 		$(this).addClass('selected');
+		 });
+
+		 size.click(function(){
+		 		size.removeClass('selected');
+		 		$(this).addClass('selected');
+		 });
+
+		 var productQua = $('.productQua input'),
+		 		 quantity = productQua.attr("value");
+
+		 $('.numInc').click(function(){
+		 		if(quantity === null){
+		 			quantity = 1;
+		 		};
+
+				quantity ++;
+
+		 		productQua.attr("value",quantity);
+
+		 });
+
+		 $('.numDes').click(function(){
+		 		if(quantity === null){
+		 			quantity = 1;
+		 		};
+
+		 		quantity --;
+
+		 		if(quantity < 1){
+		 			quantity = 1;
+		 		};
+
+		 		productQua.attr("value",quantity);
+		 });
+
 		})
 	</script>
 </body>
